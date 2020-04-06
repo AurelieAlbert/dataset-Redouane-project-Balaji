@@ -6,11 +6,11 @@ The initial material set up with Anna Sommer is available here : https://github.
 ## The boxes 
 
   - files defining the 1°x1° boxes indexes in eNATL60:
-    - boxes_GS_1x1_eNATL60.csv
+    - https://github.com/AurelieAlbert/dataset-Redouane-project-Balaji/blob/master/boxes/boxes_GS_1x1_eNATL60.csv
     - 
     -
   - plots to see the boxes :
-    - test_map_boxes_1x1_GS.png
+    - https://github.com/AurelieAlbert/dataset-Redouane-project-Balaji/blob/master/boxes/test_map_boxes_1x1_GS.png
     -
     -
   
