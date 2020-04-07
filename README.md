@@ -19,9 +19,9 @@ The initial material set up with Anna Sommer is available here : https://github.
   - script for one 1°x1° box and one day mean profiles : https://github.com/AurelieAlbert/dataset-Redouane-project-Balaji/blob/master/predictors/extractions-gradients-all-variables-boxes.py
   - scalability tests :
     - 1 box 1 day on :
-       - HSW24 :
-       - BDW28 : 
-       - VISU :
+       - HSW24 : 1h30
+       - BDW28 :  1h50
+       - VISU : 1h30
     - 1 box 1 month ?
     - 1 box 3 month ?
     - 10 box 1 day ?
