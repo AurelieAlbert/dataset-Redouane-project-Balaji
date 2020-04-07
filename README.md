@@ -27,3 +27,11 @@ The initial material set up with Anna Sommer is available here : https://github.
     - 10 box 1 day ?
     
 ## The result w'b'
+
+  - script
+  - scalability tests :
+     - 1 box 1 day :
+       - HSW24 :  error: Exceeded step memory limit at some point.
+       - BDW28 :   error: Exceeded step memory limit at some point.
+       - VISU : ...
+    
