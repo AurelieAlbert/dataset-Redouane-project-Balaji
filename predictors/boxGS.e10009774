@@ -1,0 +1,5 @@
++ ulimit -s
++ ulimit -s unlimited
++ export PATH=/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:/scratch/cnt0024/hmg2840/albert7a/DEV/RUN_TOOLS/UTILS/:/home/albert7a/bin:/scratch/cnt0024/hmg2840/albert7a/bin:./:/scratch/cnt0024/hmg2840/albert7a/DEV/RUN_TOOLS-HEAD/UTILS:/scratch/cnt0024/hmg2840/albert7a/DEV/NCL/bin/:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/scratch/cnt0024/hmg2840/albert7a/DEV/DCM_16072019/RUNTOOLS/bin:/opt/software/occigen/tools/nco/4.4.6/hdf5/1.8.17/netcdf/4.4.0_fortran-4.4.2/intel/17.0/openmpi/intel/2.0.1/bin/
++ PATH=/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:/scratch/cnt0024/hmg2840/albert7a/DEV/RUN_TOOLS/UTILS/:/home/albert7a/bin:/scratch/cnt0024/hmg2840/albert7a/bin:./:/scratch/cnt0024/hmg2840/albert7a/DEV/RUN_TOOLS-HEAD/UTILS:/scratch/cnt0024/hmg2840/albert7a/DEV/NCL/bin/:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/scratch/cnt0024/hmg2840/albert7a/DEV/DCM_16072019/RUNTOOLS/bin:/opt/software/occigen/tools/nco/4.4.6/hdf5/1.8.17/netcdf/4.4.0_fortran-4.4.2/intel/17.0/openmpi/intel/2.0.1/bin/
++ python extractions-gradients-all-variables-boxes.py GS 1 20090701

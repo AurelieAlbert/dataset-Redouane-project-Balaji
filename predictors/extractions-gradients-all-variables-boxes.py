@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 """
-This script extracts profiles of temperature, salinity and 3D velocities in 1°x1° boxes in eNATL60-BLBT02 and compute buoyancy and 3D gradients of all quantities. Then it average over the box and over 24h and save it to a single file
+This script extracts profiles of temperature, salinity and 3D velocities in 1degx1deg boxes in eNATL60-BLBT02 and compute buoyancy and 3D gradients of all quantities. Then it average over the box and over 24h and save it to a single file
 """
 
 ##imports
@@ -26,7 +26,7 @@ dsgrid=xr.open_dataset(gridfile,chunks={'x':1000,'y':1000})
 
 ## box indices 
 def read_csv(box):
-    boxes=pd.read_csv('/home/albert7a/git/formation_ANNA/make_boxes/boxes_'+str(box)+'_1x1_eNATL60.csv',sep = '\t',index_col=0)
+    boxes=pd.read_csv('/scratch/cnt0024/hmg2840/albert7a/DEV/git/dataset-Redouane-project-Balaji/boxes/boxes_'+str(box)+'_1x1_eNATL60.csv',sep = '\t',index_col=0)
     imin=boxes['imin']
     imax=boxes['imax']
     jmin=boxes['jmin']
@@ -118,7 +118,7 @@ def compute_all_profiles_all_var(date,ibox,profile_name,imin,imax,jmin,jmax,box_
     list_dataset=[]
     for var in ['votemper','vosaline','vozocrtx','vomecrty','vovecrtz','buoyancy']:
         print('compute profile and dx,dy,dz of '+var)
-        profile_data,profile_data_dx,profile_data_dy,profile_data_dz,attrs=compute_all_profiles(var,'20090701',0,imin,imax,jmin,jmax,box_name)
+        profile_data,profile_data_dx,profile_data_dy,profile_data_dz,attrs=compute_all_profiles(var,date,ibox,imin,imax,jmin,jmax,box_name)
         dataset=profile_data.to_dataset(name=var)
         dataset[var].attrs=attrs
         dataset[var].attrs['standard_name']=attrs['standard_name']
@@ -171,10 +171,10 @@ def main():
     k = int(args[1])
     date = str(args[2])
 
-    now=datetime.datetime.now()
-    print("Start at ", now.strftime("%Y-%m-%d %H:%M:%S"))
+    before=datetime.datetime.now()
+    print("Start at ", before.strftime("%Y-%m-%d %H:%M:%S"))
     imin,imax,jmin,jmax,box_name=read_csv(box)
-    profile_name='/scratch/cnt0024/hmg2840/albert7a/eNATL60/eNATL60-BLBT02-S/ANNA/'+str(box)+'/eNATL60'+str(box)+box_name[k]+'-BLBT02_y'+date[0:4]+'m'+date[4:6]+'d'+date[6:9]+'_predictors-profiles.nc'
+    profile_name='/scratch/cnt0024/hmg2840/albert7a/eNATL60/eNATL60-BLBT02-S/RL/'+str(box)+'/eNATL60'+str(box)+box_name[k]+'-BLBT02_y'+date[0:4]+'m'+date[4:6]+'d'+date[6:9]+'_predictors-profiles.nc'
 
     if not os.path.exists(profile_name):
         print("Computing profiles")
@@ -183,8 +183,9 @@ def main():
         print("Not computing, profiles already exist")
 
 
-    now=datetime.datetime.now()
-    print("End at ", now.strftime("%Y-%m-%d %H:%M:%S"))
+    after=datetime.datetime.now()
+    print("End at ", after.strftime("%Y-%m-%d %H:%M:%S"))
+    print("Execution time", after-before)
 
 
 if __name__ == '__main__':
