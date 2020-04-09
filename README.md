@@ -33,5 +33,5 @@ The initial material set up with Anna Sommer is available here : https://github.
      - 1 box 1 day :
        - HSW24 :  error: Exceeded step memory limit at some point.
        - BDW28 :   error: Exceeded step memory limit at some point.
-       - VISU : ...
+       - VISU : the 6h maximum are not enough to produce the 3D file, mean file ?
     
