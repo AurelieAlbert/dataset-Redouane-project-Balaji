@@ -30,8 +30,13 @@ The initial material set up with Anna Sommer is available here : https://github.
 
   - script
   - scalability tests :
-     - 1 box 1 day :
+     - 1 box 1 day all the profiles or mean profile :
        - HSW24 :  error: Exceeded step memory limit at some point.
        - BDW28 :   error: Exceeded step memory limit at some point.
-       - VISU : the 6h maximum are not enough to produce the 3D file, mean file ?
+       - VISU : the 6h maximum are not enough to produce the 3D file
+     - 1 box 1 day 1 profile (out of 8740) :
+       - HSW24 :  
+       - BDW28 :   
+       - VISU : 
+    
     
