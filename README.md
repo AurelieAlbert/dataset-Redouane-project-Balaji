@@ -36,7 +36,7 @@ The initial material set up with Anna Sommer is available here : https://github.
        - VISU : the 6h maximum are not enough to produce the 3D file
      - 1 box 1 day 1 profile (out of 8740) :
        - HSW24 :  
-       - BDW28 :   
+       - BDW28 : Exceeded step memory limit at some point  
        - VISU : 
     
     
