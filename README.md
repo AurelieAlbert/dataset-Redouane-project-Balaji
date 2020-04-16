@@ -39,8 +39,9 @@ The initial material set up with Anna Sommer is available here : https://github.
        - BDW28 : error: Exceeded step memory limit at some point.  
        - VISU : the 6h maximum are not enough to produce the 3D file       
      - 1 box 1 day all profiles separate :
-       - HSW24 : 
-       - BDW28 : 
-       - VISU : 
+       - HSW24 : 1 profile/hour, so max 23 profiles in one job
+       - BDW28 : 1 profile/hour, so max 23 profiles in one job
+       - VISU : 1 profile/hour, so max 6 profiles in one job
+       - in parallel : 
      
     
