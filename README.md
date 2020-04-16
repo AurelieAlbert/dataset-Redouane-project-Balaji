@@ -42,6 +42,8 @@ The initial material set up with Anna Sommer is available here : https://github.
        - HSW24 : 1 profile/hour, so max 23 profiles in one job
        - BDW28 : 1 profile/hour, so max 23 profiles in one job
        - VISU : 1 profile/hour, so max 6 profiles in one job
-       - in parallel : 
+       - in parallel : 129 600 procs, pas réalisable, aussi le nombre de fichiers est prohibitif
+     - nouvelles stratégies :
+       - changer les chunks + restreindre dès le début à la boîte GS toute entière
      
-    
+     
