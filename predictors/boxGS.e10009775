@@ -3,3 +3,11 @@
 + export PATH=/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:/scratch/cnt0024/hmg2840/albert7a/DEV/RUN_TOOLS/UTILS/:/home/albert7a/bin:/scratch/cnt0024/hmg2840/albert7a/bin:./:/scratch/cnt0024/hmg2840/albert7a/DEV/RUN_TOOLS-HEAD/UTILS:/scratch/cnt0024/hmg2840/albert7a/DEV/NCL/bin/:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/scratch/cnt0024/hmg2840/albert7a/DEV/DCM_16072019/RUNTOOLS/bin:/opt/software/occigen/tools/nco/4.4.6/hdf5/1.8.17/netcdf/4.4.0_fortran-4.4.2/intel/17.0/openmpi/intel/2.0.1/bin/
 + PATH=/scratch/cnt0024/hmg2840/albert7a/anaconda3/bin:/scratch/cnt0024/hmg2840/albert7a/DEV/RUN_TOOLS/UTILS/:/home/albert7a/bin:/scratch/cnt0024/hmg2840/albert7a/bin:./:/scratch/cnt0024/hmg2840/albert7a/DEV/RUN_TOOLS-HEAD/UTILS:/scratch/cnt0024/hmg2840/albert7a/DEV/NCL/bin/:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/scratch/cnt0024/hmg2840/albert7a/DEV/DCM_16072019/RUNTOOLS/bin:/opt/software/occigen/tools/nco/4.4.6/hdf5/1.8.17/netcdf/4.4.0_fortran-4.4.2/intel/17.0/openmpi/intel/2.0.1/bin/
 + python extractions-gradients-all-variables-boxes.py GS 2 20090701
+/scratch/cnt0024/hmg2840/albert7a/anaconda3/lib/python3.7/site-packages/dask/config.py:168: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  data = yaml.load(f.read()) or {}
+/scratch/cnt0024/hmg2840/albert7a/anaconda3/lib/python3.7/site-packages/distributed/utils.py:136: RuntimeWarning: Couldn't detect a suitable IP address for reaching '8.8.8.8', defaulting to '127.0.0.1': [Errno 101] Network is unreachable
+  RuntimeWarning,
+/scratch/cnt0024/hmg2840/albert7a/anaconda3/lib/python3.7/site-packages/dask/array/numpy_compat.py:28: RuntimeWarning: invalid value encountered in true_divide
+  x = np.divide(x1, x2, out)
+slurmstepd: error: Exceeded step memory limit at some point.
+slurmstepd: error: Exceeded job memory limit at some point.
