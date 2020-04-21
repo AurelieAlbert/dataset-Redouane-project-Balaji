@@ -92,7 +92,7 @@ def compute_mean_wprime_bprime(date,ibox,profile_name,imin,imax,jmin,jmax,box_na
     wprime_ont=wprime_rechunk.interp(depthw=deptht.values)
     wprime_goodw=wprime_ont.rename({'depthw':'deptht'})
     wprimebprime=wprime_goodw*bprime
-    profile=wprimebprime[:,:,jmin[ibox]:jmax[ibox],imin[ibox]:imax[ibox]].mean(dim={'x','y','time_counter'})
+    profile=wprimebprime[:,:,jmin[ibox]-(np.min(jmin)-60):jmax[ibox]-(np.min(jmin)-60),imin[ibox]-(np.min(imin)-60):imax[ibox]-(np.min(imin)-60)].mean(dim={'x','y','time_counter'})
     print('to dataset')
     dataset=profile.to_dataset(name='wprimebprime')
     dataset['wprimebprime'].attrs=tdata.attrs
