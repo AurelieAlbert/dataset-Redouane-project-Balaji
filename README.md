@@ -46,5 +46,6 @@ The initial material set up with Anna Sommer is available here : https://github.
      - nouvelles stratégies :
        - changer les chunks + restreindre dès le début à la boîte GS toute entière -> ça n'a pas l'air de changer grand chose ...
        - restreindre les niveaux verticaux ?
+       - utiliser dask et chunks pour écrire wprimebprime en 3D pour toute la boite GS ?
      
      
