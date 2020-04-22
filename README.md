@@ -44,6 +44,7 @@ The initial material set up with Anna Sommer is available here : https://github.
        - VISU : 1 profile/hour, so max 6 profiles in one job
        - in parallel : 129 600 procs, pas réalisable, aussi le nombre de fichiers est prohibitif
      - nouvelles stratégies :
-       - changer les chunks + restreindre dès le début à la boîte GS toute entière
+       - changer les chunks + restreindre dès le début à la boîte GS toute entière -> ça n'a pas l'air de changer grand chose ...
+       - restreindre les niveaux verticaux ?
      
      
